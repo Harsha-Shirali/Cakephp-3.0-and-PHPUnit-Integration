@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/bookmarker/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php</title>
+  <title>Code Coverage for C:\wamp\www\cake3_0\cakephp-3_ci/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/bookmarker</a> <span class="divider">/</span></li>
+        <li><a href="index.html">C:\wamp\www\cake3_0\cakephp-3_ci</a> <span class="divider">/</span></li>
         <li><a href="vendor.html">vendor</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp.html">cakephp</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp_cakephp.html">cakephp</a> <span class="divider">/</span></li>
@@ -363,7 +363,7 @@
      <tr class="danger"><td><div align="right"><a name="67"></a><a href="#67">67</a></div></td><td class="codeLine">        set_error_handler([$this, 'handleError'], $level);</td></tr>
      <tr class="danger"><td><div align="right"><a name="68"></a><a href="#68">68</a></div></td><td class="codeLine">        set_exception_handler([$this, 'handleException']);</td></tr>
      <tr class="danger"><td><div align="right"><a name="69"></a><a href="#69">69</a></div></td><td class="codeLine">        register_shutdown_function(function () {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="70"></a><a href="#70">70</a></div></td><td class="codeLine">            if (php_sapi_name() === 'cli') {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="70"></a><a href="#70">70</a></div></td><td class="codeLine">            if (PHP_SAPI === 'cli') {</td></tr>
      <tr class="danger"><td><div align="right"><a name="71"></a><a href="#71">71</a></div></td><td class="codeLine">                return;</td></tr>
      <tr class="warning"><td><div align="right"><a name="72"></a><a href="#72">72</a></div></td><td class="codeLine">            }</td></tr>
      <tr class="danger"><td><div align="right"><a name="73"></a><a href="#73">73</a></div></td><td class="codeLine">            $error = error_get_last();</td></tr>
@@ -495,7 +495,7 @@
      <tr><td><div align="right"><a name="199"></a><a href="#199">199</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="200"></a><a href="#200">200</a></div></td><td class="codeLine">     * @param string $level The level name of the log.</td></tr>
      <tr><td><div align="right"><a name="201"></a><a href="#201">201</a></div></td><td class="codeLine">     * @param array $data Array of error data.</td></tr>
-     <tr><td><div align="right"><a name="202"></a><a href="#202">202</a></div></td><td class="codeLine">     * @return void</td></tr>
+     <tr><td><div align="right"><a name="202"></a><a href="#202">202</a></div></td><td class="codeLine">     * @return bool</td></tr>
      <tr><td><div align="right"><a name="203"></a><a href="#203">203</a></div></td><td class="codeLine">     */</td></tr>
      <tr><td><div align="right"><a name="204"></a><a href="#204">204</a></div></td><td class="codeLine">    protected function _logError($level, $data)</td></tr>
      <tr><td><div align="right"><a name="205"></a><a href="#205">205</a></div></td><td class="codeLine">    {</td></tr>
@@ -560,7 +560,7 @@
      <tr class="danger"><td><div align="right"><a name="264"></a><a href="#264">264</a></div></td><td class="codeLine">                $message .= &quot;\nException Attributes: &quot; . var_export($exception-&gt;getAttributes(), true);</td></tr>
      <tr class="danger"><td><div align="right"><a name="265"></a><a href="#265">265</a></div></td><td class="codeLine">            }</td></tr>
      <tr class="danger"><td><div align="right"><a name="266"></a><a href="#266">266</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="danger"><td><div align="right"><a name="267"></a><a href="#267">267</a></div></td><td class="codeLine">        if (php_sapi_name() !== 'cli') {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="267"></a><a href="#267">267</a></div></td><td class="codeLine">        if (PHP_SAPI !== 'cli') {</td></tr>
      <tr class="danger"><td><div align="right"><a name="268"></a><a href="#268">268</a></div></td><td class="codeLine">            $request = Router::getRequest();</td></tr>
      <tr class="danger"><td><div align="right"><a name="269"></a><a href="#269">269</a></div></td><td class="codeLine">            if ($request) {</td></tr>
      <tr class="danger"><td><div align="right"><a name="270"></a><a href="#270">270</a></div></td><td class="codeLine">                $message .= &quot;\nRequest URL: &quot; . $request-&gt;here();</td></tr>
@@ -618,7 +618,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.4.37-1+deb.sury.org~precise+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.32</a> at Tue Feb 10 15:48:20 UTC 2015.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.12</a> and <a href="http://phpunit.de/">PHPUnit 3.7.32</a> at Thu May 7 12:44:54 UTC 2015.</small>
     </p>
    </footer>
   </div>

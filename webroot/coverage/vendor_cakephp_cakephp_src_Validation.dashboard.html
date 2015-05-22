@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for C:\wamp\www\cake3_0\cakephp-3_ci/vendor/cakephp/cakephp/src/Event</title>
+  <title>Dashboard for C:\wamp\www\cake3_0\cakephp-3_ci/vendor/cakephp/cakephp/src/Validation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
         <li><a href="vendor_cakephp.html">cakephp</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp_cakephp.html">cakephp</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp_cakephp_src.html">src</a> <span class="divider">/</span></li>
-        <li><a href="vendor_cakephp_cakephp_src_Event.html">Event</a></li>
+        <li><a href="vendor_cakephp_cakephp_src_Validation.html">Validation</a></li>
         <li class="active">(Dashboard)</li>
 
       </ul>
@@ -50,25 +50,15 @@
     <div class="span6">
      <h2>Top Project Risks</h2>
      <ul>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#25">EventManager</a> (4290)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_Event.php.html#23">Event</a> (90)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManagerTrait.php.html#21">EventManagerTrait</a> (30)</li>
+              <li><a href="vendor_cakephp_cakephp_src_Validation_ValidatorAwareTrait.php.html#36">ValidatorAwareTrait</a> (56)</li>
 
      </ul>
     </div>
     <div class="span6">
      <h2>Least Tested Methods</h2>
      <ul>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#336">EventManager::dispatch</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#306">EventManager::_detachSubscriber</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#270">EventManager::off</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#229">EventManager::detach</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#372">EventManager::_callListener</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#400">EventManager::listeners</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManagerTrait.php.html#71">EventManagerTrait::dispatchEvent</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManagerTrait.php.html#48">EventManagerTrait::eventManager</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#445">EventManager::__debugInfo</a> (0%)</li>
-              <li><a href="vendor_cakephp_cakephp_src_Event_EventManager.php.html#432">EventManager::prioritisedListeners</a> (0%)</li>
+              <li><a href="vendor_cakephp_cakephp_src_Validation_ValidatorAwareTrait.php.html#116">ValidatorAwareTrait::validationDefault</a> (0%)</li>
+              <li><a href="vendor_cakephp_cakephp_src_Validation_ValidatorAwareTrait.php.html#87">ValidatorAwareTrait::validator</a> (0%)</li>
 
      </ul>
     </div>
@@ -95,7 +85,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([3,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .datum(getCoverageDistributionData([1,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -147,7 +137,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[0,9,"<a href=\"vendor_cakephp_cakephp_src_Event_Event.php.html#23\">Event<\/a>"],[0,65,"<a href=\"vendor_cakephp_cakephp_src_Event_EventManager.php.html#25\">EventManager<\/a>"],[0,5,"<a href=\"vendor_cakephp_cakephp_src_Event_EventManagerTrait.php.html#21\">EventManagerTrait<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[0,7,"<a href=\"vendor_cakephp_cakephp_src_Validation_ValidatorAwareTrait.php.html#36\">ValidatorAwareTrait<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);

@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/bookmarker/vendor/cakephp/cakephp/src/basics.php</title>
+  <title>Code Coverage for C:\wamp\www\cake3_0\cakephp-3_ci/vendor/cakephp/cakephp/src/basics.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/bookmarker</a> <span class="divider">/</span></li>
+        <li><a href="index.html">C:\wamp\www\cake3_0\cakephp-3_ci</a> <span class="divider">/</span></li>
         <li><a href="vendor.html">vendor</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp.html">cakephp</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp_cakephp.html">cakephp</a> <span class="divider">/</span></li>
@@ -79,7 +79,7 @@
      </tr>
 
      <tr>
-      <td class="danger" colspan="4"><a href="#113">stackTrace(array $options = [])</a></td>
+      <td class="danger" colspan="4"><a href="#112">stackTrace(array $options = [])</a></td>
       <td class="danger big">       <div class="progress progress-danger" style="width: 100px;">
         <div class="bar" style="width: 0.00%;"></div>
        </div>
@@ -96,7 +96,7 @@
      </tr>
 
      <tr>
-      <td class="danger" colspan="4"><a href="#132">json_last_error_msg()</a></td>
+      <td class="danger" colspan="4"><a href="#131">json_last_error_msg()</a></td>
       <td class="danger big">       <div class="progress progress-danger" style="width: 100px;">
         <div class="bar" style="width: 0.00%;"></div>
        </div>
@@ -192,7 +192,7 @@
      <tr><td><div align="right"><a name="73"></a><a href="#73">73</a></div></td><td class="codeLine"></td></tr>
      <tr class="danger"><td><div align="right"><a name="74"></a><a href="#74">74</a></div></td><td class="codeLine">TEXT;</td></tr>
      <tr class="danger"><td><div align="right"><a name="75"></a><a href="#75">75</a></div></td><td class="codeLine">        $template = $html;</td></tr>
-     <tr class="danger"><td><div align="right"><a name="76"></a><a href="#76">76</a></div></td><td class="codeLine">        if (php_sapi_name() === 'cli' || $showHtml === false) {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="76"></a><a href="#76">76</a></div></td><td class="codeLine">        if (PHP_SAPI === 'cli' || $showHtml === false) {</td></tr>
      <tr class="danger"><td><div align="right"><a name="77"></a><a href="#77">77</a></div></td><td class="codeLine">            $template = $text;</td></tr>
      <tr class="danger"><td><div align="right"><a name="78"></a><a href="#78">78</a></div></td><td class="codeLine">            if ($showFrom) {</td></tr>
      <tr class="danger"><td><div align="right"><a name="79"></a><a href="#79">79</a></div></td><td class="codeLine">                $lineInfo = sprintf('%s (line %s)', $file, $line);</td></tr>
@@ -227,42 +227,41 @@
      <tr><td><div align="right"><a name="108"></a><a href="#108">108</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="109"></a><a href="#109">109</a></div></td><td class="codeLine">     * @param array $options Format for outputting stack trace</td></tr>
      <tr><td><div align="right"><a name="110"></a><a href="#110">110</a></div></td><td class="codeLine">     * @return mixed Formatted stack trace</td></tr>
-     <tr><td><div align="right"><a name="111"></a><a href="#111">111</a></div></td><td class="codeLine">     * @see Debugger::trace()</td></tr>
-     <tr><td><div align="right"><a name="112"></a><a href="#112">112</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="113"></a><a href="#113">113</a></div></td><td class="codeLine">    function stackTrace(array $options = [])</td></tr>
-     <tr><td><div align="right"><a name="114"></a><a href="#114">114</a></div></td><td class="codeLine">    {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="115"></a><a href="#115">115</a></div></td><td class="codeLine">        if (!Configure::read('debug')) {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="116"></a><a href="#116">116</a></div></td><td class="codeLine">            return;</td></tr>
-     <tr class="warning"><td><div align="right"><a name="117"></a><a href="#117">117</a></div></td><td class="codeLine">        }</td></tr>
-     <tr><td><div align="right"><a name="118"></a><a href="#118">118</a></div></td><td class="codeLine"></td></tr>
-     <tr class="danger"><td><div align="right"><a name="119"></a><a href="#119">119</a></div></td><td class="codeLine">        $options += ['start' =&gt; 0];</td></tr>
-     <tr class="danger"><td><div align="right"><a name="120"></a><a href="#120">120</a></div></td><td class="codeLine">        $options['start']++;</td></tr>
-     <tr class="danger"><td><div align="right"><a name="121"></a><a href="#121">121</a></div></td><td class="codeLine">        echo Debugger::trace($options);</td></tr>
-     <tr class="danger"><td><div align="right"><a name="122"></a><a href="#122">122</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="123"></a><a href="#123">123</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="124"></a><a href="#124">124</a></div></td><td class="codeLine">}</td></tr>
-     <tr><td><div align="right"><a name="125"></a><a href="#125">125</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="126"></a><a href="#126">126</a></div></td><td class="codeLine">if (!function_exists('json_last_error_msg')) {</td></tr>
-     <tr><td><div align="right"><a name="127"></a><a href="#127">127</a></div></td><td class="codeLine">    /**</td></tr>
-     <tr><td><div align="right"><a name="128"></a><a href="#128">128</a></div></td><td class="codeLine">     * Provides the fallback implementation of json_last_error_msg() available in PHP 5.5 and above.</td></tr>
-     <tr><td><div align="right"><a name="129"></a><a href="#129">129</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="130"></a><a href="#130">130</a></div></td><td class="codeLine">     * @return string Error message.</td></tr>
-     <tr><td><div align="right"><a name="131"></a><a href="#131">131</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="132"></a><a href="#132">132</a></div></td><td class="codeLine">    function json_last_error_msg()</td></tr>
-     <tr><td><div align="right"><a name="133"></a><a href="#133">133</a></div></td><td class="codeLine">    {</td></tr>
-     <tr><td><div align="right"><a name="134"></a><a href="#134">134</a></div></td><td class="codeLine">        static $errors = array(</td></tr>
-     <tr><td><div align="right"><a name="135"></a><a href="#135">135</a></div></td><td class="codeLine">            JSON_ERROR_NONE =&gt; '',</td></tr>
-     <tr><td><div align="right"><a name="136"></a><a href="#136">136</a></div></td><td class="codeLine">            JSON_ERROR_DEPTH =&gt; 'Maximum stack depth exceeded',</td></tr>
-     <tr><td><div align="right"><a name="137"></a><a href="#137">137</a></div></td><td class="codeLine">            JSON_ERROR_STATE_MISMATCH =&gt; 'Invalid or malformed JSON',</td></tr>
-     <tr><td><div align="right"><a name="138"></a><a href="#138">138</a></div></td><td class="codeLine">            JSON_ERROR_CTRL_CHAR =&gt; 'Control character error, possibly incorrectly encoded',</td></tr>
-     <tr><td><div align="right"><a name="139"></a><a href="#139">139</a></div></td><td class="codeLine">            JSON_ERROR_SYNTAX =&gt; 'Syntax error',</td></tr>
-     <tr><td><div align="right"><a name="140"></a><a href="#140">140</a></div></td><td class="codeLine">            JSON_ERROR_UTF8 =&gt; 'Malformed UTF-8 characters, possibly incorrectly encoded'</td></tr>
-     <tr class="danger"><td><div align="right"><a name="141"></a><a href="#141">141</a></div></td><td class="codeLine">        );</td></tr>
-     <tr class="danger"><td><div align="right"><a name="142"></a><a href="#142">142</a></div></td><td class="codeLine">        $error = json_last_error();</td></tr>
-     <tr class="danger"><td><div align="right"><a name="143"></a><a href="#143">143</a></div></td><td class="codeLine">        return array_key_exists($error, $errors) ? $errors[$error] : &quot;Unknown error ({$error})&quot;;</td></tr>
-     <tr class="warning"><td><div align="right"><a name="144"></a><a href="#144">144</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="145"></a><a href="#145">145</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="146"></a><a href="#146">146</a></div></td><td class="codeLine">}</td></tr>
+     <tr><td><div align="right"><a name="111"></a><a href="#111">111</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="112"></a><a href="#112">112</a></div></td><td class="codeLine">    function stackTrace(array $options = [])</td></tr>
+     <tr><td><div align="right"><a name="113"></a><a href="#113">113</a></div></td><td class="codeLine">    {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="114"></a><a href="#114">114</a></div></td><td class="codeLine">        if (!Configure::read('debug')) {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="115"></a><a href="#115">115</a></div></td><td class="codeLine">            return;</td></tr>
+     <tr class="warning"><td><div align="right"><a name="116"></a><a href="#116">116</a></div></td><td class="codeLine">        }</td></tr>
+     <tr><td><div align="right"><a name="117"></a><a href="#117">117</a></div></td><td class="codeLine"></td></tr>
+     <tr class="danger"><td><div align="right"><a name="118"></a><a href="#118">118</a></div></td><td class="codeLine">        $options += ['start' =&gt; 0];</td></tr>
+     <tr class="danger"><td><div align="right"><a name="119"></a><a href="#119">119</a></div></td><td class="codeLine">        $options['start']++;</td></tr>
+     <tr class="danger"><td><div align="right"><a name="120"></a><a href="#120">120</a></div></td><td class="codeLine">        echo Debugger::trace($options);</td></tr>
+     <tr class="danger"><td><div align="right"><a name="121"></a><a href="#121">121</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="122"></a><a href="#122">122</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="123"></a><a href="#123">123</a></div></td><td class="codeLine">}</td></tr>
+     <tr><td><div align="right"><a name="124"></a><a href="#124">124</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="125"></a><a href="#125">125</a></div></td><td class="codeLine">if (!function_exists('json_last_error_msg')) {</td></tr>
+     <tr><td><div align="right"><a name="126"></a><a href="#126">126</a></div></td><td class="codeLine">    /**</td></tr>
+     <tr><td><div align="right"><a name="127"></a><a href="#127">127</a></div></td><td class="codeLine">     * Provides the fallback implementation of json_last_error_msg() available in PHP 5.5 and above.</td></tr>
+     <tr><td><div align="right"><a name="128"></a><a href="#128">128</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="129"></a><a href="#129">129</a></div></td><td class="codeLine">     * @return string Error message.</td></tr>
+     <tr><td><div align="right"><a name="130"></a><a href="#130">130</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="131"></a><a href="#131">131</a></div></td><td class="codeLine">    function json_last_error_msg()</td></tr>
+     <tr><td><div align="right"><a name="132"></a><a href="#132">132</a></div></td><td class="codeLine">    {</td></tr>
+     <tr><td><div align="right"><a name="133"></a><a href="#133">133</a></div></td><td class="codeLine">        static $errors = [</td></tr>
+     <tr><td><div align="right"><a name="134"></a><a href="#134">134</a></div></td><td class="codeLine">            JSON_ERROR_NONE =&gt; '',</td></tr>
+     <tr><td><div align="right"><a name="135"></a><a href="#135">135</a></div></td><td class="codeLine">            JSON_ERROR_DEPTH =&gt; 'Maximum stack depth exceeded',</td></tr>
+     <tr><td><div align="right"><a name="136"></a><a href="#136">136</a></div></td><td class="codeLine">            JSON_ERROR_STATE_MISMATCH =&gt; 'Invalid or malformed JSON',</td></tr>
+     <tr><td><div align="right"><a name="137"></a><a href="#137">137</a></div></td><td class="codeLine">            JSON_ERROR_CTRL_CHAR =&gt; 'Control character error, possibly incorrectly encoded',</td></tr>
+     <tr><td><div align="right"><a name="138"></a><a href="#138">138</a></div></td><td class="codeLine">            JSON_ERROR_SYNTAX =&gt; 'Syntax error',</td></tr>
+     <tr><td><div align="right"><a name="139"></a><a href="#139">139</a></div></td><td class="codeLine">            JSON_ERROR_UTF8 =&gt; 'Malformed UTF-8 characters, possibly incorrectly encoded'</td></tr>
+     <tr class="danger"><td><div align="right"><a name="140"></a><a href="#140">140</a></div></td><td class="codeLine">        ];</td></tr>
+     <tr class="danger"><td><div align="right"><a name="141"></a><a href="#141">141</a></div></td><td class="codeLine">        $error = json_last_error();</td></tr>
+     <tr class="danger"><td><div align="right"><a name="142"></a><a href="#142">142</a></div></td><td class="codeLine">        return array_key_exists($error, $errors) ? $errors[$error] : &quot;Unknown error ({$error})&quot;;</td></tr>
+     <tr class="warning"><td><div align="right"><a name="143"></a><a href="#143">143</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="144"></a><a href="#144">144</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="145"></a><a href="#145">145</a></div></td><td class="codeLine">}</td></tr>
 
     </tbody>
    </table>
@@ -274,7 +273,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.4.37-1+deb.sury.org~precise+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.32</a> at Tue Feb 10 15:48:20 UTC 2015.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.12</a> and <a href="http://phpunit.de/">PHPUnit 3.7.32</a> at Thu May 7 12:44:54 UTC 2015.</small>
     </p>
    </footer>
   </div>

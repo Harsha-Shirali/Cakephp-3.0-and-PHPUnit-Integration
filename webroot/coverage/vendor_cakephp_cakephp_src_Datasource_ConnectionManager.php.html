@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /var/www/bookmarker/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php</title>
+  <title>Code Coverage for C:\wamp\www\cake3_0\cakephp-3_ci/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/var/www/bookmarker</a> <span class="divider">/</span></li>
+        <li><a href="index.html">C:\wamp\www\cake3_0\cakephp-3_ci</a> <span class="divider">/</span></li>
         <li><a href="vendor.html">vendor</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp.html">cakephp</a> <span class="divider">/</span></li>
         <li><a href="vendor_cakephp_cakephp.html">cakephp</a> <span class="divider">/</span></li>
@@ -160,7 +160,7 @@
      </tr>
 
      <tr>
-      <td class="danger" colspan="4">&nbsp;<a href="#181">get($name, $useAliases = true)</a></td>
+      <td class="danger" colspan="4">&nbsp;<a href="#182">get($name, $useAliases = true)</a></td>
       <td class="danger big">       <div class="progress progress-danger" style="width: 100px;">
         <div class="bar" style="width: 0.00%;"></div>
        </div>
@@ -353,31 +353,32 @@
      <tr><td><div align="right"><a name="170"></a><a href="#170">170</a></div></td><td class="codeLine">     *</td></tr>
      <tr><td><div align="right"><a name="171"></a><a href="#171">171</a></div></td><td class="codeLine">     * If the connection has not been constructed an instance will be added</td></tr>
      <tr><td><div align="right"><a name="172"></a><a href="#172">172</a></div></td><td class="codeLine">     * to the registry. This method will use any aliases that have been</td></tr>
-     <tr><td><div align="right"><a name="173"></a><a href="#173">173</a></div></td><td class="codeLine">     * defined. If you want the original unaliased connections use getOriginal()</td></tr>
-     <tr><td><div align="right"><a name="174"></a><a href="#174">174</a></div></td><td class="codeLine">     *</td></tr>
-     <tr><td><div align="right"><a name="175"></a><a href="#175">175</a></div></td><td class="codeLine">     * @param string $name The connection name.</td></tr>
-     <tr><td><div align="right"><a name="176"></a><a href="#176">176</a></div></td><td class="codeLine">     * @param bool $useAliases Set to false to not use aliased connections.</td></tr>
-     <tr><td><div align="right"><a name="177"></a><a href="#177">177</a></div></td><td class="codeLine">     * @return \Cake\Database\Connection A connection object.</td></tr>
-     <tr><td><div align="right"><a name="178"></a><a href="#178">178</a></div></td><td class="codeLine">     * @throws \Cake\Datasource\Exception\MissingDatasourceConfigException When config</td></tr>
-     <tr><td><div align="right"><a name="179"></a><a href="#179">179</a></div></td><td class="codeLine">     * data is missing.</td></tr>
-     <tr><td><div align="right"><a name="180"></a><a href="#180">180</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="181"></a><a href="#181">181</a></div></td><td class="codeLine">    public static function get($name, $useAliases = true)</td></tr>
-     <tr><td><div align="right"><a name="182"></a><a href="#182">182</a></div></td><td class="codeLine">    {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="183"></a><a href="#183">183</a></div></td><td class="codeLine">        if ($useAliases &amp;&amp; isset(static::$_aliasMap[$name])) {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="184"></a><a href="#184">184</a></div></td><td class="codeLine">            $name = static::$_aliasMap[$name];</td></tr>
-     <tr class="danger"><td><div align="right"><a name="185"></a><a href="#185">185</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="danger"><td><div align="right"><a name="186"></a><a href="#186">186</a></div></td><td class="codeLine">        if (empty(static::$_config[$name])) {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="187"></a><a href="#187">187</a></div></td><td class="codeLine">            throw new MissingDatasourceConfigException(['name' =&gt; $name]);</td></tr>
-     <tr class="warning"><td><div align="right"><a name="188"></a><a href="#188">188</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="danger"><td><div align="right"><a name="189"></a><a href="#189">189</a></div></td><td class="codeLine">        if (empty(static::$_registry)) {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="190"></a><a href="#190">190</a></div></td><td class="codeLine">            static::$_registry = new ConnectionRegistry();</td></tr>
-     <tr class="danger"><td><div align="right"><a name="191"></a><a href="#191">191</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="danger"><td><div align="right"><a name="192"></a><a href="#192">192</a></div></td><td class="codeLine">        if (isset(static::$_registry-&gt;{$name})) {</td></tr>
-     <tr class="danger"><td><div align="right"><a name="193"></a><a href="#193">193</a></div></td><td class="codeLine">            return static::$_registry-&gt;{$name};</td></tr>
-     <tr class="warning"><td><div align="right"><a name="194"></a><a href="#194">194</a></div></td><td class="codeLine">        }</td></tr>
-     <tr class="danger"><td><div align="right"><a name="195"></a><a href="#195">195</a></div></td><td class="codeLine">        return static::$_registry-&gt;load($name, static::$_config[$name]);</td></tr>
-     <tr class="warning"><td><div align="right"><a name="196"></a><a href="#196">196</a></div></td><td class="codeLine">    }</td></tr>
-     <tr><td><div align="right"><a name="197"></a><a href="#197">197</a></div></td><td class="codeLine">}</td></tr>
+     <tr><td><div align="right"><a name="173"></a><a href="#173">173</a></div></td><td class="codeLine">     * defined. If you want the original unaliased connections pass `FALSE`</td></tr>
+     <tr><td><div align="right"><a name="174"></a><a href="#174">174</a></div></td><td class="codeLine">     * as second parameter.</td></tr>
+     <tr><td><div align="right"><a name="175"></a><a href="#175">175</a></div></td><td class="codeLine">     *</td></tr>
+     <tr><td><div align="right"><a name="176"></a><a href="#176">176</a></div></td><td class="codeLine">     * @param string $name The connection name.</td></tr>
+     <tr><td><div align="right"><a name="177"></a><a href="#177">177</a></div></td><td class="codeLine">     * @param bool $useAliases Set to false to not use aliased connections.</td></tr>
+     <tr><td><div align="right"><a name="178"></a><a href="#178">178</a></div></td><td class="codeLine">     * @return \Cake\Database\Connection A connection object.</td></tr>
+     <tr><td><div align="right"><a name="179"></a><a href="#179">179</a></div></td><td class="codeLine">     * @throws \Cake\Datasource\Exception\MissingDatasourceConfigException When config</td></tr>
+     <tr><td><div align="right"><a name="180"></a><a href="#180">180</a></div></td><td class="codeLine">     * data is missing.</td></tr>
+     <tr><td><div align="right"><a name="181"></a><a href="#181">181</a></div></td><td class="codeLine">     */</td></tr>
+     <tr><td><div align="right"><a name="182"></a><a href="#182">182</a></div></td><td class="codeLine">    public static function get($name, $useAliases = true)</td></tr>
+     <tr><td><div align="right"><a name="183"></a><a href="#183">183</a></div></td><td class="codeLine">    {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="184"></a><a href="#184">184</a></div></td><td class="codeLine">        if ($useAliases &amp;&amp; isset(static::$_aliasMap[$name])) {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="185"></a><a href="#185">185</a></div></td><td class="codeLine">            $name = static::$_aliasMap[$name];</td></tr>
+     <tr class="danger"><td><div align="right"><a name="186"></a><a href="#186">186</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="danger"><td><div align="right"><a name="187"></a><a href="#187">187</a></div></td><td class="codeLine">        if (empty(static::$_config[$name])) {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="188"></a><a href="#188">188</a></div></td><td class="codeLine">            throw new MissingDatasourceConfigException(['name' =&gt; $name]);</td></tr>
+     <tr class="warning"><td><div align="right"><a name="189"></a><a href="#189">189</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="danger"><td><div align="right"><a name="190"></a><a href="#190">190</a></div></td><td class="codeLine">        if (empty(static::$_registry)) {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="191"></a><a href="#191">191</a></div></td><td class="codeLine">            static::$_registry = new ConnectionRegistry();</td></tr>
+     <tr class="danger"><td><div align="right"><a name="192"></a><a href="#192">192</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="danger"><td><div align="right"><a name="193"></a><a href="#193">193</a></div></td><td class="codeLine">        if (isset(static::$_registry-&gt;{$name})) {</td></tr>
+     <tr class="danger"><td><div align="right"><a name="194"></a><a href="#194">194</a></div></td><td class="codeLine">            return static::$_registry-&gt;{$name};</td></tr>
+     <tr class="warning"><td><div align="right"><a name="195"></a><a href="#195">195</a></div></td><td class="codeLine">        }</td></tr>
+     <tr class="danger"><td><div align="right"><a name="196"></a><a href="#196">196</a></div></td><td class="codeLine">        return static::$_registry-&gt;load($name, static::$_config[$name]);</td></tr>
+     <tr class="warning"><td><div align="right"><a name="197"></a><a href="#197">197</a></div></td><td class="codeLine">    }</td></tr>
+     <tr><td><div align="right"><a name="198"></a><a href="#198">198</a></div></td><td class="codeLine">}</td></tr>
 
     </tbody>
    </table>
@@ -389,7 +390,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.4.37-1+deb.sury.org~precise+1</a> and <a href="http://phpunit.de/">PHPUnit 3.7.32</a> at Tue Feb 10 15:48:20 UTC 2015.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.18</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.12</a> and <a href="http://phpunit.de/">PHPUnit 3.7.32</a> at Thu May 7 12:44:54 UTC 2015.</small>
     </p>
    </footer>
   </div>
