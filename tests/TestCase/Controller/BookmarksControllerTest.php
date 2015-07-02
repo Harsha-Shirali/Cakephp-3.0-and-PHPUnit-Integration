@@ -30,7 +30,8 @@ class BookmarksControllerTest extends IntegrationTestCase
     public function testIndex()
     {
 		$result = $this->get('/bookmarks/index');
-       debug($result);
+		   $this->assertTrue(TRUE, 'This should already work.');
+      // debug($result);
    
     }
 
@@ -42,8 +43,8 @@ class BookmarksControllerTest extends IntegrationTestCase
     public function testView()
     {
 		$result = $this->get('/bookmarks/view');
-        debug($result);
-         //$this->assertTrue(TRUE, 'This should already work.');
+        //debug($result);
+         $this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -54,8 +55,8 @@ class BookmarksControllerTest extends IntegrationTestCase
     public function testAdd()
     {
 		$result = $this->get('/bookmarks/add');
-        debug($result);
-      //  $this->assertTrue(TRUE, 'This should already work.');
+       // debug($result);
+      $this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -66,8 +67,8 @@ class BookmarksControllerTest extends IntegrationTestCase
     public function testEdit()
     {
 		$result = $this->get('/bookmarks/edit');
-        debug($result);
-        // $this->assertTrue($result);
+        //debug($result);
+           $this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -78,8 +79,8 @@ class BookmarksControllerTest extends IntegrationTestCase
     public function testDelete()
     {
 		$result = $this->get('/bookmarks/delete');
-        debug($result);
-        // $this->assertTrue(TRUE, 'This should already work.');
+      //  debug($result);
+          $this->assertTrue(TRUE, 'This should already work.');
     }
     
      public function testIndexPostData() {
@@ -96,7 +97,7 @@ class BookmarksControllerTest extends IntegrationTestCase
             '/bookmarks/add',
             array('data' => $data, 'method' => 'post')
         );
-        debug($result);
+        //debug($result);
     }
     
      public function testBookmarkPostData()
@@ -109,7 +110,7 @@ class BookmarksControllerTest extends IntegrationTestCase
                 'tags_string' => 'sample bookmark',
         ];
        $result= $this->post('/bookmarks/add', $data);
-		debug($result);
+		//debug($result);
        // $this->assertResponseSuccess();
 
     }
