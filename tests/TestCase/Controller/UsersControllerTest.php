@@ -54,8 +54,8 @@ class UsersControllerTest extends IntegrationTestCase
     public function testView()
     {
 		$result = $this->get('/users/index');
-        debug($result);
-      //   $this->assertTrue(TRUE, 'This should already work.');
+       // debug($result);
+        $this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -66,8 +66,8 @@ class UsersControllerTest extends IntegrationTestCase
     public function testAdd()
     {
 		$result = $this->get('/users/add');
-        debug($result);
-        //$this->assertTrue(TRUE, 'This should already work.');
+        //debug($result);
+      $this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -78,8 +78,8 @@ class UsersControllerTest extends IntegrationTestCase
     public function testEdit()
     {
 		$result = $this->get('/users/edit');
-        debug($result);
-        // $this->assertTrue(TRUE, 'This should already work.');
+       // debug($result);
+       $this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -90,20 +90,20 @@ class UsersControllerTest extends IntegrationTestCase
     public function testDelete()
     {
 		$result = $this->get('/users/delete');
-        debug($result);
-       // $this->assertTrue(TRUE, 'This should already work.');
+        //debug($result);
+        $this->assertTrue(TRUE, 'This should already work.');
     }
     
     public function testLogin()
     {
 		$result = $this->get('/users/login');
-        debug($result);
-       // $this->assertTrue(TRUE, 'This should already work.');
+       // debug($result);
+       $this->assertTrue(TRUE, 'This should already work.');
     }
     public function testRedirection() {
     $return_var = $this->get('/users/login', array('return'=>'vars'));
-    debug($return_var);
-
+   // debug($return_var);
+	 $this->assertTrue(TRUE, 'This should already work.');
 }
 
 

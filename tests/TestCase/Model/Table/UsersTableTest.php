@@ -161,7 +161,7 @@ public function testSaveFormData() {
 		
 		$user = $this->Users->newEntity($data);
 		$result = $this->Users->save($user);
-		debug($result);
+//		debug($result);
 		$this->assertTrue((bool)$result);
 
 	}
