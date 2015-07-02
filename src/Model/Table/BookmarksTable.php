@@ -49,10 +49,11 @@ class BookmarksTable extends Table
             ->add('user_id', 'valid', ['rule' => 'numeric'])
             ->requirePresence('user_id', 'create')
             ->notEmpty('user_id')
-            ->allowEmpty('title')
+            ->notEmpty('title','Please enter the title!')
             ->allowEmpty('description')
-            ->allowEmpty('url');
-
+            ->notEmpty('url')
+			->add('url', 'valid', ['rule' => 'url','message' => 'Please enter the valid URL!']);
+			
         return $validator;
     }
 

@@ -3,16 +3,30 @@
 namespace App\Test\TestCase\View\Helper;
 
 use App\View\Helper\ProgressHelper;
+use Cake\TestSuite\IntegrationTestCase;
+use Cake\Network\Request;
+use Cake\Network\Response;
 use Cake\TestSuite\TestCase;
 use Cake\View\View;
+use App\Template\Bookmarks;
+use Cake\Core\Configure;
+use Cake\Core\Plugin;
+use Cake\TestSuite\StringCompareTrait;
+use Cake\Controller\Controller;
 
-class ProgressHelperTest extends TestCase
+class ProgressHelperTest extends IntegrationTestCase
 {
     public function setUp()
 {
     parent::setUp();
-    $View = new View();
-    $this->Progress = new ProgressHelper($View);
+   // $View = new View();
+    //$this->Progress = new ProgressHelper($View);
+	$request = new Request();
+        $response = new Response();
+        $View = new View($request, $response);
+		$this->Progress = new ProgressHelper($View);
+	
+			// $Bookmark = new View($request, $response);
 }
 
     public function testBar()
