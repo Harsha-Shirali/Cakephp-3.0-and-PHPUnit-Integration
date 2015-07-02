@@ -108,7 +108,7 @@
                     "email": "mapthegod@gmail.com"
                 },
                 {
-                    "name": "José Lorenzo Rodríguez",
+                    "name": "Jose Lorenzo Rodriguez",
                     "email": "jose.zap@gmail.com"
                 }
             ],
@@ -131,12 +131,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
+<<<<<<< HEAD
                 "reference": "29ca3d120c25d554ad5143adffdab0f76bc6c9b9"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/cakephp/zipball/29ca3d120c25d554ad5143adffdab0f76bc6c9b9",
                 "reference": "29ca3d120c25d554ad5143adffdab0f76bc6c9b9",
+=======
+                "reference": "2b21a8d40d58a1e5c2d485224a59ba2bdcfbfc4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/2b21a8d40d58a1e5c2d485224a59ba2bdcfbfc4c",
+                "reference": "2b21a8d40d58a1e5c2d485224a59ba2bdcfbfc4c",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
@@ -198,7 +207,11 @@
             "keywords": [
                 "framework"
             ],
+<<<<<<< HEAD
             "time": "2015-06-28 17:00:48"
+=======
+            "time": "2015-05-07 01:16:08"
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
         },
         {
             "name": "cakephp/migrations",
@@ -206,12 +219,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/migrations.git",
+<<<<<<< HEAD
                 "reference": "936c17e960d101e70ee1711a3631ecf3550ae518"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/migrations/zipball/936c17e960d101e70ee1711a3631ecf3550ae518",
                 "reference": "936c17e960d101e70ee1711a3631ecf3550ae518",
+=======
+                "reference": "d02bdda31a9d39892a00ce63af26ae4832f3d026"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/migrations/zipball/d02bdda31a9d39892a00ce63af26ae4832f3d026",
+                "reference": "d02bdda31a9d39892a00ce63af26ae4832f3d026",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
@@ -248,7 +270,11 @@
                 "cakephp",
                 "migrations"
             ],
+<<<<<<< HEAD
             "time": "2015-06-25 07:02:24"
+=======
+            "time": "2015-04-27 16:24:32"
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
         },
         {
             "name": "cakephp/plugin-installer",
@@ -334,6 +360,7 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
+<<<<<<< HEAD
             "version": "2.8.15",
             "source": {
                 "type": "git",
@@ -344,6 +371,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/6495567afe1486353bec82d6b2de6f98553d60a5",
                 "reference": "6495567afe1486353bec82d6b2de6f98553d60a5",
+=======
+            "version": "2.8.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "fc81cb582c9cd9024a16e0698c02b6d3cb0229df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/fc81cb582c9cd9024a16e0698c02b6d3cb0229df",
+                "reference": "fc81cb582c9cd9024a16e0698c02b6d3cb0229df",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
@@ -384,7 +423,11 @@
                 "mobile detector",
                 "php mobile detect"
             ],
+<<<<<<< HEAD
             "time": "2015-06-18 09:43:23"
+=======
+            "time": "2015-04-25 20:10:52"
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
         },
         {
             "name": "nesbot/carbon",
@@ -835,6 +878,7 @@
         },
         {
             "name": "robmorgan/phinx",
+<<<<<<< HEAD
             "version": "v0.4.4",
             "source": {
                 "type": "git",
@@ -845,6 +889,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/robmorgan/phinx/zipball/b4b7d1e045d679278d4cb9ab18fd513f15f4797e",
                 "reference": "b4b7d1e045d679278d4cb9ab18fd513f15f4797e",
+=======
+            "version": "v0.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robmorgan/phinx.git",
+                "reference": "0d1f9cb9939f65f506a8a3f5fee356764c310fd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/0d1f9cb9939f65f506a8a3f5fee356764c310fd4",
+                "reference": "0d1f9cb9939f65f506a8a3f5fee356764c310fd4",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
@@ -893,6 +949,7 @@
                 "migrations",
                 "phinx"
             ],
+<<<<<<< HEAD
             "time": "2015-06-14 13:02:38"
         },
         {
@@ -907,6 +964,23 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Config/zipball/58ded81f1f582a87c528ef3dae9a859f78b5f374",
                 "reference": "58ded81f1f582a87c528ef3dae9a859f78b5f374",
+=======
+            "time": "2015-02-23 16:38:12"
+        },
+        {
+            "name": "symfony/config",
+            "version": "v2.6.6",
+            "target-dir": "Symfony/Component/Config",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Config.git",
+                "reference": "d91be01336605db8da21b79bc771e46a7276d1bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/d91be01336605db8da21b79bc771e46a7276d1bc",
+                "reference": "d91be01336605db8da21b79bc771e46a7276d1bc",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
@@ -942,6 +1016,7 @@
                 }
             ],
             "description": "Symfony Config Component",
+<<<<<<< HEAD
             "homepage": "https://symfony.com",
             "time": "2015-06-11 14:06:56"
         },
@@ -957,6 +1032,24 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Console/zipball/564398bc1f33faf92fc2ec86859983d30eb81806",
                 "reference": "564398bc1f33faf92fc2ec86859983d30eb81806",
+=======
+            "homepage": "http://symfony.com",
+            "time": "2015-03-30 15:54:10"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.6.6",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/5b91dc4ed5eb08553f57f6df04c4730a73992667",
+                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
@@ -999,6 +1092,7 @@
                 }
             ],
             "description": "Symfony Console Component",
+<<<<<<< HEAD
             "homepage": "https://symfony.com",
             "time": "2015-06-10 15:30:22"
         },
@@ -1014,10 +1108,31 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a0d43eb3e17d4f4c6990289805a488a0482a07f3",
                 "reference": "a0d43eb3e17d4f4c6990289805a488a0482a07f3",
+=======
+            "homepage": "http://symfony.com",
+            "time": "2015-03-30 15:54:10"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v2.6.6",
+            "target-dir": "Symfony/Component/Filesystem",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Filesystem.git",
+                "reference": "4983964b3693e4f13449cb3800c64a9112c301b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/4983964b3693e4f13449cb3800c64a9112c301b4",
+                "reference": "4983964b3693e4f13449cb3800c64a9112c301b4",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "~2.7"
@@ -1048,6 +1163,7 @@
                 }
             ],
             "description": "Symfony Filesystem Component",
+<<<<<<< HEAD
             "homepage": "https://symfony.com",
             "time": "2015-06-08 09:37:21"
         },
@@ -1063,10 +1179,31 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/Yaml/zipball/9808e75c609a14f6db02f70fccf4ca4aab53c160",
                 "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160",
+=======
+            "homepage": "http://symfony.com",
+            "time": "2015-03-22 16:55:57"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.6.6",
+            "target-dir": "Symfony/Component/Yaml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "174f009ed36379a801109955fc5a71a49fe62dd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/174f009ed36379a801109955fc5a71a49fe62dd4",
+                "reference": "174f009ed36379a801109955fc5a71a49fe62dd4",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "~2.7"
@@ -1097,8 +1234,13 @@
                 }
             ],
             "description": "Symfony Yaml Component",
+<<<<<<< HEAD
             "homepage": "https://symfony.com",
             "time": "2015-06-10 15:30:22"
+=======
+            "homepage": "http://symfony.com",
+            "time": "2015-03-30 15:54:10"
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
         }
     ],
     "packages-dev": [
@@ -1108,12 +1250,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/bake.git",
+<<<<<<< HEAD
                 "reference": "dc76b9c768ed1003ecea4d4c53f392da3464868c"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/cakephp/bake/zipball/dc76b9c768ed1003ecea4d4c53f392da3464868c",
                 "reference": "dc76b9c768ed1003ecea4d4c53f392da3464868c",
+=======
+                "reference": "44a56985f8f85898e11f27afbaf331a38afcf51e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/bake/zipball/44a56985f8f85898e11f27afbaf331a38afcf51e",
+                "reference": "44a56985f8f85898e11f27afbaf331a38afcf51e",
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
                 "shasum": ""
             },
             "require": {
@@ -1146,7 +1297,11 @@
                 "bake",
                 "cakephp"
             ],
+<<<<<<< HEAD
             "time": "2015-06-25 15:52:35"
+=======
+            "time": "2015-05-05 07:57:21"
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
         },
         {
             "name": "cakephp/debug_kit",
@@ -1154,6 +1309,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
+<<<<<<< HEAD
                 "reference": "669118b9530927235e039d15fec34baf8a7ce756"
             },
             "dist": {
@@ -1164,6 +1320,18 @@
             },
             "require": {
                 "cakephp/cakephp": "3.0.*"
+=======
+                "reference": "e32cdd081afb85616f56c6504a6cb00faeaa8922"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/e32cdd081afb85616f56c6504a6cb00faeaa8922",
+                "reference": "e32cdd081afb85616f56c6504a6cb00faeaa8922",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0"
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
             },
             "require-dev": {
                 "cakephp/cakephp-codesniffer": "dev-master",
@@ -1206,19 +1374,23 @@
                 "debug",
                 "kit"
             ],
+<<<<<<< HEAD
             "time": "2015-06-30 00:50:25"
+=======
+            "time": "2015-04-26 14:17:35"
+>>>>>>> 70f965b9ea09f27f6c8fd24232918aa2dfdaf082
         },
         {
             "name": "d11wtq/boris",
             "version": "v1.0.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/d11wtq/boris.git",
+                "url": "https://github.com/borisrepl/boris.git",
                 "reference": "125dd4e5752639af7678a22ea597115646d89c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/d11wtq/boris/zipball/125dd4e5752639af7678a22ea597115646d89c6e",
+                "url": "https://api.github.com/repos/borisrepl/boris/zipball/125dd4e5752639af7678a22ea597115646d89c6e",
                 "reference": "125dd4e5752639af7678a22ea597115646d89c6e",
                 "shasum": ""
             },
