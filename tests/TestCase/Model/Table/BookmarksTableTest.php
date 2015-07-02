@@ -99,7 +99,7 @@ class BookmarksTableTest extends TestCase
 		
 		$bookmarks = $this->Bookmarks->newEntity($data);
 		$result = $this->Bookmarks->save($bookmarks);
-		debug($result);
+		//debug($result);
 		$this->assertFalse((bool)$result);
 	
 		
@@ -118,10 +118,67 @@ class BookmarksTableTest extends TestCase
 		
 		$bookmarks = $this->Bookmarks->newEntity($data);
 		$result = $this->Bookmarks->save($bookmarks);
-		debug($result);
+		//debug($result);
 		$this->assertTrue((bool)$result);
 
 	}
+
+	public function testInvalidURL() {
+		$data = array(
+				'user_id' => '1',
+			   'title' => 'New Bookmark',
+			   'description' => 'Testing Save Data',
+			   'url' => 'bookmark',
+            
+		);
+		$this->Bookmarks = TableRegistry::get('Bookmarks');
+		$bookmarks= $this->Bookmarks->newEntity($data);
+		$result = $this->Bookmarks->save($bookmarks);
+		$this->assertFalse((bool)$result);
+	}
+	
+	public function testValidURL() {
+		$data = array(
+				'user_id' => '1',
+			   'title' => 'New Bookmark',
+			   'description' => 'Testing Save Data',
+			   'url' => 'http://www.bookmark.com',
+            
+		);
+		$this->Bookmarks = TableRegistry::get('Bookmarks');
+		$bookmarks= $this->Bookmarks->newEntity($data);
+		$result = $this->Bookmarks->save($bookmarks);
+		$this->assertTrue((bool)$result);
+	}
+	
+	public function testEmptyURL() {
+		$data = array(
+				'user_id' => '1',
+			   'title' => 'New Bookmark',
+			   'description' => 'Testing Save Data',
+			   'url' => '',
+            
+		);
+		$this->Bookmarks = TableRegistry::get('Bookmarks');
+		$bookmarks= $this->Bookmarks->newEntity($data);
+		$result = $this->Bookmarks->save($bookmarks);
+		$this->assertFalse((bool)$result);
+	}
+	
+	public function testEmptyTitle() {
+		$data = array(
+				'user_id' => '1',
+			   'title' => '',
+			   'description' => 'Testing Save Data',
+			   'url' => 'http://www.bookmark.com',
+            
+		);
+		$this->Bookmarks = TableRegistry::get('Bookmarks');
+		$bookmarks= $this->Bookmarks->newEntity($data);
+		$result = $this->Bookmarks->save($bookmarks);
+		$this->assertFalse((bool)$result);
+	}
+	
   /* public function testEmptyForm() {
 		$data = array(
 			'Bookmarks' => array(
