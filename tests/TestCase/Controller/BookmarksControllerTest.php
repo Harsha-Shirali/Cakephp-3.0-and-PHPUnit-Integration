@@ -29,7 +29,9 @@ class BookmarksControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$result = $this->get('/bookmarks/index');
+       debug($result);
+   
     }
 
     /**
@@ -39,7 +41,9 @@ class BookmarksControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$result = $this->get('/bookmarks/view');
+        debug($result);
+         //$this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -49,7 +53,9 @@ class BookmarksControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$result = $this->get('/bookmarks/add');
+        debug($result);
+      //  $this->assertTrue(TRUE, 'This should already work.');
     }
 
     /**
@@ -59,7 +65,9 @@ class BookmarksControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$result = $this->get('/bookmarks/edit');
+        debug($result);
+        // $this->assertTrue($result);
     }
 
     /**
@@ -69,6 +77,40 @@ class BookmarksControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$result = $this->get('/bookmarks/delete');
+        debug($result);
+        // $this->assertTrue(TRUE, 'This should already work.');
+    }
+    
+     public function testIndexPostData() {
+        $data = array(
+            'Bookmarks' => array(
+            
+                'title' => 'saple title',
+                'description' => 'new bookmark',
+                'url' => 'www.bookmark.com',
+                'tags_string' => 'sample bookmark',
+            )
+        );
+        $result = $this->get(
+            '/bookmarks/add',
+            array('data' => $data, 'method' => 'post')
+        );
+        debug($result);
+    }
+    
+     public function testBookmarkPostData()
+    {
+        $data = [
+            'user_id' => 246,
+             'title' => 'sample title',
+                'description' => 'new bookmark',
+                'url' => 'www.bookmark.com',
+                'tags_string' => 'sample bookmark',
+        ];
+       $result= $this->post('/bookmarks/add', $data);
+		debug($result);
+       // $this->assertResponseSuccess();
+
     }
 }
